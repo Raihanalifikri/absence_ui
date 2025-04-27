@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:training/core/constants/colors.dart';
+import 'package:training/presentation/home/pages/main_page.dart';
 
 import '../../../core/assets/assets.gen.dart';
 import 'login_page.dart';
@@ -27,14 +28,14 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.blue,
+      backgroundColor: AppColors.white,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Spacer(),
           Padding(
             padding: const EdgeInsets.only(top: 100.0),
-            child: Center(child: Assets.lottie.splash.lottie()),
+            child: Center(child: Assets.lottie.loading.lottie()),
           ),
           const Spacer(),
           Assets.images.logo.image(width: 150, height: 150),
